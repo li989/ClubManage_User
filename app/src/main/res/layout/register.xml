@@ -1,0 +1,186 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".register">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@android:color/background_light"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <RelativeLayout
+            android:id="@+id/register_liner"
+            android:layout_width="match_parent"
+            android:layout_height="150px"
+            android:background="#ffffff"
+            android:orientation="horizontal">
+
+            <Button
+                android:id="@+id/register_exit"
+                style="@style/Widget.AppCompat.Button.Borderless"
+                android:layout_width="150px"
+                android:layout_height="150px"
+                android:background="@drawable/arrow_left" />
+
+            <TextView
+                android:id="@+id/register_release"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:layout_marginTop="20px"
+                android:layout_toRightOf="@+id/button_apply_activity_exit"
+                android:text="注册账号"
+                android:textAppearance="@style/TextAppearance.AppCompat.Body1"
+                android:textSize="80px"
+                android:textStyle="bold" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/register_zhang"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/register_liner"
+            android:layout_marginTop="60dp">
+
+            <TextView
+                android:id="@+id/register_zhang1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="150px"
+                android:text="账号"
+                android:textColor="#000000"
+                android:textSize="60px" />
+
+            <EditText
+                android:id="@+id/register_zhang2"
+                android:layout_width="700px"
+                android:layout_height="100px"
+                android:layout_marginLeft="50px"
+                android:layout_toRightOf="@+id/register_zhang1"
+                android:background="@drawable/shape"
+                android:gravity="center"
+                android:hint="输入账号"
+                android:maxLines="1"
+                android:singleLine="true" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/register_mima"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/register_zhang"
+            android:layout_marginTop="100px">
+
+            <TextView
+                android:id="@+id/register_mima1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="150px"
+                android:text="密码"
+                android:textColor="#000000"
+                android:textSize="60px" />
+
+            <EditText
+                android:id="@+id/register_mima2"
+                android:layout_width="700px"
+                android:layout_height="100px"
+                android:layout_marginLeft="50px"
+                android:layout_toRightOf="@+id/register_mima1"
+                android:background="@drawable/shape"
+                android:gravity="center"
+                android:hint="输入密码"
+                android:inputType="textPassword"
+                android:maxLines="1"
+                android:singleLine="true" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/register_yuanmima"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/register_mima"
+            android:layout_marginTop="100px">
+
+            <TextView
+                android:id="@+id/register_yuanmima1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="50px"
+                android:text="确认密码"
+                android:textColor="#000000"
+                android:textSize="60px" />
+
+            <EditText
+                android:id="@+id/register_yuanmima2"
+                android:layout_width="700px"
+                android:layout_height="100px"
+                android:layout_marginLeft="35px"
+                android:layout_toRightOf="@+id/register_yuanmima1"
+                android:background="@drawable/shape"
+                android:gravity="center"
+                android:hint="输入密码"
+                android:inputType="textPassword"
+                android:maxLines="1"
+                android:selectAllOnFocus="true"
+                android:singleLine="true" />
+        </RelativeLayout>
+
+        <TextView
+            android:id="@+id/register_error"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/register_yuanmima"
+            android:layout_centerInParent="true"
+            android:textColor="#F44336" />
+
+        <RelativeLayout
+            android:id="@+id/register_photo"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/register_yuanmima"
+            android:layout_marginTop="100px">
+
+            <TextView
+                android:id="@+id/register_photo1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="100px"
+                android:text="手机号"
+                android:textColor="#000000"
+                android:textSize="60px" />
+
+            <EditText
+                android:id="@+id/register_photo2"
+                android:layout_width="700px"
+                android:layout_height="100px"
+                android:layout_marginLeft="50px"
+                android:layout_toRightOf="@+id/register_photo1"
+                android:background="@drawable/shape"
+                android:gravity="center"
+                android:hint="手机号"
+                android:maxLength="11"
+                android:maxLines="1"
+                android:numeric="integer"
+                android:singleLine="true" />
+        </RelativeLayout>
+
+        <Button
+            android:id="@+id/register_release2"
+            android:layout_width="223dp"
+            android:layout_height="68dp"
+            android:layout_below="@+id/register_photo"
+            android:layout_centerInParent="true"
+            android:layout_marginTop="200px"
+            android:background="@drawable/shape2"
+            android:gravity="center"
+            android:text="注册"
+            android:textSize="60px" />
+    </RelativeLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>

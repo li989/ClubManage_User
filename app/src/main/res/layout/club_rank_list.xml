@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              xmlns:tools="http://schemas.android.com/tools"
+              android:orientation="horizontal"
+              android:padding="8dp"
+              android:layout_width="match_parent"
+              android:layout_height="wrap_content">
+
+  <TextView
+      android:id="@+id/list_rank"
+      android:layout_width="50dp"
+      android:layout_height="50dp"
+      android:layout_gravity="center"
+      android:gravity="center"
+      android:textSize="60px"
+      android:text="1" />
+
+  <ImageView
+      android:id="@+id/club_rank_list_img"
+      android:layout_width="70dp"
+      android:layout_height="70dp"
+      tools:src="@tools:sample/avatars" />
+
+
+
+  <LinearLayout
+      android:layout_width="wrap_content"
+      android:layout_height="wrap_content"
+      android:layout_gravity="center"
+
+      android:padding="5dp"
+      android:orientation="vertical">
+    <TextView
+        android:id="@+id/club_rank_list_t1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        tools:text="@tools:sample/lorem[3]" />
+    <TextView
+        android:id="@+id/club_rank_list_t2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        tools:text="@tools:sample/lorem[4]" />
+    <TextView
+        android:id="@+id/club_rank_list_t3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        tools:text="@tools:sample/lorem[2]" />
+  </LinearLayout>
+
+  <TextView
+      android:id="@+id/list_grade"
+
+      android:layout_width="50dp"
+      android:layout_height="50dp"
+      android:layout_gravity="center"
+      android:layout_weight="2"
+      android:gravity="right|center_vertical"
+      android:paddingRight="8dp"
+      android:text="1"
+      android:textSize="60px" />
+</LinearLayout>

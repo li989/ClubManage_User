@@ -1,0 +1,249 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/backgray"
+    android:exported="true"
+    tools:context=".PersonalInform">
+
+
+    <Button
+        android:id="@+id/perinf_exit"
+        style="@style/Widget.AppCompat.Button.Borderless"
+        android:layout_width="150px"
+        android:layout_height="150px"
+        android:background="@drawable/arrow_left"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/perinf_release"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="个人信息"
+        android:textAppearance="@style/TextAppearance.AppCompat.Body1"
+        android:textSize="80px"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toTopOf="@+id/info_h_back"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintStart_toStartOf="@+id/perinf_exit"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ImageView
+        android:id="@+id/info_h_back"
+        android:layout_width="0dp"
+        android:layout_height="200dp"
+        android:alpha="0.5"
+        android:scaleType="fitXY"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/perinf_exit">
+
+    </ImageView>
+
+    <ImageView
+        android:id="@+id/info_h_head"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:layout_marginStart="50dp"
+        android:layout_marginTop="50dp"
+        android:scaleType="fitXY"
+        app:layout_constraintStart_toStartOf="@+id/info_h_back"
+        app:layout_constraintTop_toTopOf="@+id/info_h_back" />
+
+    <Button
+        android:id="@+id/per_btn1"
+        android:layout_width="0dp"
+        android:layout_height="46dp"
+        android:layout_marginTop="1dp"
+        android:background="@android:color/background_light"
+        android:stateListAnimator="@null"
+        android:text="      姓名"
+        android:textAlignment="textStart"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/info_h_back" />
+
+    <Button
+        android:id="@+id/per_btn2"
+        android:layout_width="0dp"
+        android:layout_height="46dp"
+        android:layout_marginTop="1dp"
+        android:background="@android:color/background_light"
+        android:stateListAnimator="@null"
+        android:text="      学号"
+        android:textAlignment="textStart"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/per_btn1" />
+
+    <Button
+        android:id="@+id/per_btn3"
+        android:layout_width="0dp"
+        android:layout_height="46dp"
+        android:layout_marginTop="1dp"
+        android:background="@android:color/background_light"
+        android:stateListAnimator="@null"
+        android:text="      性别"
+        android:textAlignment="textStart"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/per_btn2" />
+
+    <Button
+        android:id="@+id/per_btn4"
+        android:layout_width="0dp"
+        android:layout_height="46dp"
+        android:layout_marginTop="1dp"
+        android:background="@android:color/background_light"
+        android:stateListAnimator="@null"
+        android:text="      电话号码"
+        android:textAlignment="textStart"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/per_btn3" />
+
+    <Button
+        android:id="@+id/per_btn5"
+        android:layout_width="0dp"
+        android:layout_height="46dp"
+        android:layout_marginTop="1dp"
+        android:background="@android:color/background_light"
+        android:stateListAnimator="@null"
+        android:text="      出生日期"
+        android:textAlignment="textStart"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/per_btn4" />
+
+    <Button
+        android:id="@+id/per_btn6"
+        android:layout_width="0dp"
+        android:layout_height="46dp"
+        android:layout_marginTop="1dp"
+        android:background="@android:color/background_light"
+        android:stateListAnimator="@null"
+        android:text="      专业"
+        android:textAlignment="textStart"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/per_btn5" />
+
+
+
+    <Button
+        android:id="@+id/per_btn7"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:layout_marginTop="3dp"
+        android:layout_marginEnd="8dp"
+        android:background="@drawable/right_per"
+        app:layout_constraintEnd_toEndOf="@+id/per_btn1"
+        app:layout_constraintTop_toTopOf="@+id/per_btn1" />
+
+    <Button
+        android:id="@+id/per_btn8"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:layout_marginEnd="8dp"
+        android:background="@drawable/right_per"
+        app:layout_constraintEnd_toEndOf="@+id/per_btn2"
+        app:layout_constraintTop_toTopOf="@+id/per_btn2" />
+
+    <Button
+        android:id="@+id/per_btn9"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:layout_marginEnd="8dp"
+        android:background="@drawable/right_per"
+        app:layout_constraintEnd_toEndOf="@+id/per_btn3"
+        app:layout_constraintTop_toTopOf="@+id/per_btn3" />
+
+    <Button
+        android:id="@+id/per_btn10"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:layout_marginEnd="8dp"
+        android:background="@drawable/right_per"
+        app:layout_constraintEnd_toEndOf="@+id/per_btn4"
+        app:layout_constraintTop_toTopOf="@+id/per_btn4" />
+
+    <Button
+        android:id="@+id/per_btn11"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:layout_marginEnd="8dp"
+        android:background="@drawable/right_per"
+        app:layout_constraintEnd_toEndOf="@+id/per_btn5"
+        app:layout_constraintTop_toTopOf="@+id/per_btn5" />
+
+    <Button
+        android:id="@+id/per_btn12"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:layout_marginEnd="8dp"
+        android:background="@drawable/right_per"
+        app:layout_constraintEnd_toEndOf="@+id/per_btn6"
+        app:layout_constraintTop_toTopOf="@+id/per_btn6" />
+
+    <TextView
+        android:id="@+id/per_t1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@android:color/background_light"
+        android:visibility="visible"
+        app:layout_constraintBottom_toBottomOf="@+id/per_btn1"
+        app:layout_constraintEnd_toStartOf="@+id/per_btn7"
+        app:layout_constraintTop_toTopOf="@+id/per_btn1" />
+
+    <TextView
+        android:id="@+id/per_t2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintBottom_toBottomOf="@+id/per_btn2"
+        app:layout_constraintEnd_toStartOf="@+id/per_btn8"
+        app:layout_constraintTop_toTopOf="@+id/per_btn2" />
+
+    <TextView
+        android:id="@+id/per_t3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintBottom_toBottomOf="@+id/per_btn3"
+        app:layout_constraintEnd_toStartOf="@+id/per_btn9"
+        app:layout_constraintTop_toTopOf="@+id/per_btn3" />
+
+    <TextView
+        android:id="@+id/per_t4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintBottom_toBottomOf="@+id/per_btn4"
+        app:layout_constraintEnd_toStartOf="@+id/per_btn10"
+        app:layout_constraintTop_toTopOf="@+id/per_btn4" />
+
+    <TextView
+        android:id="@+id/per_t5"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintBottom_toBottomOf="@+id/per_btn5"
+        app:layout_constraintEnd_toStartOf="@+id/per_btn11"
+        app:layout_constraintTop_toTopOf="@+id/per_btn5" />
+
+    <TextView
+        android:id="@+id/per_t6"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintBottom_toBottomOf="@+id/per_btn6"
+        app:layout_constraintEnd_toStartOf="@+id/per_btn12"
+        app:layout_constraintTop_toTopOf="@+id/per_btn6" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
+

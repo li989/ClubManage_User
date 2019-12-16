@@ -1,0 +1,221 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="150px"
+        android:background="#ffffff"
+        android:orientation="horizontal"
+        android:id="@+id/apply_activity_liner">
+
+        <Button
+            android:id="@+id/button_apply_activity_exit"
+            style="@style/Widget.AppCompat.Button.Borderless"
+            android:layout_width="150px"
+            android:layout_height="150px"
+            android:background="@drawable/arrow_left" />
+
+        <TextView
+            android:id="@+id/TextView_apply_activity_release"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_toRightOf="@+id/button_apply_activity_exit"
+            android:layout_marginLeft="180px"
+            android:layout_marginTop="20px"
+            android:text="申请活动"
+            android:textAppearance="@style/TextAppearance.AppCompat.Body1"
+            android:textSize="80px"
+            android:textStyle="bold" />
+
+        <Button
+            android:id="@+id/TextView_apply_activity_release2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="10px"
+            android:layout_marginTop="10px"
+            android:backgroundTint="#FFFFFF"
+            android:gravity="center"
+            android:text="提交"
+            android:textSize="60px" />
+    </RelativeLayout>
+
+    <RelativeLayout
+    android:id="@+id/apply_activity_title"
+    android:layout_below="@+id/apply_activity_liner"
+    android:layout_width="match_parent"
+    android:layout_height="150px"
+    android:layout_marginTop="20px"
+    android:background="@drawable/underline">
+    <TextView
+        android:id="@+id/TextView_apply_activity_title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="活动标题"
+        android:layout_marginLeft="20px"
+        android:layout_marginTop="20px"
+        android:textSize="60px"
+        android:textColor="#000000"
+        />
+
+        <EditText
+            android:id="@+id/activity_title"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="20px"
+            android:layout_marginTop="20px"
+            android:layout_toRightOf="@+id/TextView_apply_activity_title"
+            android:background="@null"
+            android:hint="请填写活动标题"
+            android:maxLines="1"
+            android:textSize="60px" />
+</RelativeLayout>
+    <RelativeLayout
+        android:layout_below="@+id/apply_activity_title"
+        android:id="@+id/apply_activity_place"
+        android:layout_width="match_parent"
+        android:layout_height="150px"
+        android:layout_marginTop="20px"
+        android:background="@drawable/underline">
+
+        <TextView
+            android:id="@+id/TextView_apply_activity_palce"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="20px"
+            android:layout_marginTop="40px"
+            android:text="活动地点"
+            android:textColor="#000000"
+            android:textSize="60px" />
+
+        <Spinner
+            android:id="@+id/Button_apply_activity_palce"
+            android:layout_width="match_parent"
+            android:layout_height="100px"
+            android:layout_marginLeft="20px"
+            android:layout_marginTop="20px"
+            android:layout_toRightOf="@+id/TextView_apply_activity_palce"
+            android:overlapAnchor="false"
+            android:spinnerMode="dialog"
+            android:textAlignment="center" />
+    </RelativeLayout>
+    <RelativeLayout
+        android:layout_below="@+id/apply_activity_place"
+        android:id="@+id/apply_activity_starttime"
+        android:layout_width="match_parent"
+        android:layout_height="150px"
+        android:layout_marginTop="20px"
+        android:background="@drawable/underline">
+        <TextView
+            android:id="@+id/TextView_apply_activity_starttime"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="活动开始时间"
+            android:layout_marginLeft="20px"
+            android:layout_marginTop="20px"
+            android:textSize="60px"
+            android:textColor="#000000"
+            />
+        <TextView
+            android:layout_toRightOf="@+id/TextView_apply_activity_starttime"
+            android:id="@+id/TextView_apply_activity_starttime1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@null"
+            android:gravity="left"
+            android:layout_marginLeft="20px"
+            android:layout_marginTop="20px"
+            android:textSize="60px"
+            android:hint="请选择活动开始时间"
+            />
+    </RelativeLayout>
+    <RelativeLayout
+        android:layout_below="@+id/apply_activity_starttime"
+        android:id="@+id/apply_activity_finishtime"
+        android:layout_width="match_parent"
+        android:layout_height="150px"
+        android:layout_marginTop="20px"
+        android:background="@drawable/underline">
+        <TextView
+            android:id="@+id/TextView_apply_activity_finishtime"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="活动结束时间"
+            android:layout_marginLeft="20px"
+            android:layout_marginTop="20px"
+            android:textSize="60px"
+            android:textColor="#000000"
+            />
+        <TextView
+            android:layout_toRightOf="@+id/TextView_apply_activity_finishtime"
+            android:id="@+id/TextView_apply_activity_finishtime1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@null"
+            android:gravity="left"
+            android:layout_marginLeft="20px"
+            android:layout_marginTop="20px"
+            android:textSize="60px"
+            android:hint="请选择活动结束时间"
+            />
+    </RelativeLayout>
+    <RelativeLayout
+        android:layout_below="@+id/apply_activity_finishtime"
+        android:id="@+id/apply_activity_picture"
+        android:layout_width="match_parent"
+        android:layout_height="200px"
+        android:layout_marginTop="20px"
+        android:background="@drawable/underline">
+        <TextView
+            android:id="@+id/TextView_apply_activity_picture"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="活动海报"
+            android:layout_marginLeft="20px"
+            android:layout_marginTop="40px"
+            android:textSize="60px"
+            android:textColor="#000000"
+            />
+
+        <ImageView
+            android:id="@+id/TextView_apply_activity_picture1"
+            android:layout_width="150px"
+            android:layout_height="150px"
+            android:layout_marginLeft="20px"
+            android:layout_marginTop="20px"
+            android:layout_toRightOf="@+id/TextView_apply_activity_picture"
+            android:background="@drawable/addpicture"
+            android:gravity="left" />
+    </RelativeLayout>
+    <RelativeLayout
+        android:layout_below="@+id/apply_activity_picture"
+        android:id="@+id/apply_activity_remark"
+        android:layout_width="match_parent"
+        android:layout_height="300dp"
+        android:layout_marginTop="8dp"
+        android:background="@drawable/underline">
+
+        <TextView
+            android:id="@+id/TextView_apply_activity_remark"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="20px"
+            android:layout_marginTop="40px"
+            android:text="活动介绍"
+            android:textColor="#000000"
+            android:textSize="60px" />
+
+        <EditText
+            android:id="@+id/editText6"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/TextView_apply_activity_remark"
+            android:layout_marginTop="8dp"
+            android:ems="10"
+            android:hint="不超过200字"
+            android:gravity="left|top"
+            android:lines="10"
+            android:maxLength="200" />
+    </RelativeLayout>
+</RelativeLayout>

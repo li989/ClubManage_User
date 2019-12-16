@@ -1,0 +1,149 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".add_club">
+<RelativeLayout
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="150px"
+        android:background="#FFFFFF"
+        android:orientation="horizontal"
+        android:id="@+id/add_club_liner">
+
+        <Button
+            android:id="@+id/add_club_exit"
+            style="@style/Widget.AppCompat.Button.Borderless"
+            android:layout_width="150px"
+            android:layout_height="150px"
+            android:background="@drawable/arrow_left" />
+
+        <TextView
+            android:id="@+id/add_club_release"
+            android:layout_toRightOf="@+id/add_club_exit"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="180px"
+            android:layout_marginTop="20px"
+            android:text="申请社团"
+            android:textAppearance="@style/TextAppearance.AppCompat.Body1"
+            android:textSize="80px"
+            android:textStyle="bold" />
+
+        <Button
+            android:id="@+id/add_club_release2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="10px"
+            android:layout_marginTop="10px"
+            android:backgroundTint="#FFFFFF"
+            android:gravity="center"
+            android:text="提交"
+            android:textSize="60px" />
+    </RelativeLayout>
+    <RelativeLayout
+        android:id="@+id/add_club_title1"
+        android:layout_below="@+id/add_club_liner"
+        android:layout_width="match_parent"
+        android:layout_height="150px"
+        android:layout_marginTop="20px"
+        android:background="@drawable/underline">
+        <TextView
+            android:id="@+id/add_club_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="社团名称"
+            android:layout_marginLeft="20px"
+            android:layout_marginTop="20px"
+            android:textSize="60px"
+            android:textColor="#000000"
+            />
+
+        <EditText
+            android:id="@+id/edt_club_name"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="20px"
+            android:layout_marginTop="20px"
+            android:layout_toRightOf="@+id/add_club_name"
+            android:background="@null"
+            android:hint="请填写社团名称"
+            android:textSize="60px" />
+    </RelativeLayout>
+    <RelativeLayout
+        android:id="@+id/add_club_title3"
+        android:layout_below="@+id/add_club_title1"
+        android:layout_width="match_parent"
+        android:layout_height="150px"
+        android:layout_marginTop="20px"
+        android:background="@drawable/underline">
+        <TextView
+            android:id="@+id/add_club_type"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="社团类别"
+            android:layout_marginLeft="20px"
+            android:layout_marginTop="40px"
+            android:textSize="60px"
+            android:textColor="#000000"
+            />
+        <Spinner
+            android:layout_toRightOf="@+id/add_club_type"
+            android:id="@+id/sp_club_type"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:overlapAnchor="false"
+            android:spinnerMode="dropdown"
+            android:layout_marginLeft="20px"
+            android:layout_marginTop="20px"
+            android:textAlignment="center"
+            />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/add_club_title2"
+        android:layout_width="match_parent"
+        android:layout_height="75dp"
+        android:layout_below="@+id/add_club_title3"
+        android:layout_marginTop="20px"
+        android:background="@drawable/underline">
+
+        <TextView
+            android:id="@+id/add_club_picture"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="20px"
+            android:layout_marginTop="60px"
+            android:text="社团图标"
+            android:textColor="#000000"
+            android:textSize="60px" />
+
+        <ImageView
+            android:id="@+id/add_club_picture1"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:layout_marginLeft="20px"
+            android:layout_marginTop="17dp"
+            android:layout_toRightOf="@+id/add_club_picture"
+            android:background="@drawable/addpicture"
+            android:gravity="left" />
+    </RelativeLayout>
+    <EditText
+        android:hint="请输入社团简介"
+        android:textSize="50px"
+        android:id="@+id/add_club_page"
+        android:layout_below="@+id/add_club_title2"
+        android:layout_marginTop="20px"
+        android:layout_marginBottom="70px"
+        android:gravity="top"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@drawable/underline"
+        />
+</RelativeLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>

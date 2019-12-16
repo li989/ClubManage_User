@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="professionals">
+        <item>社会实践</item>
+        <item>文学艺术</item>
+        <item>学术科技</item>
+        <item>爱心公益</item>
+        <item>体育健身</item>
+        <item>综合</item>
+    </string-array>
+</resources>

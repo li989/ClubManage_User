@@ -1,0 +1,188 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/container"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@android:color/background_light"
+    android:orientation="vertical">
+
+    <ScrollView
+        android:id="@+id/nac_root"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:overScrollMode="never"
+        android:scrollbars="none">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <RelativeLayout
+                android:id="@+id/percen_line"
+                android:layout_width="match_parent"
+                android:layout_height="200dp">
+
+                <ImageView
+                    android:id="@+id/h_back"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:alpha="0.5" />
+
+
+                <ImageView
+                    android:id="@+id/h_head"
+                    android:layout_width="100dp"
+                    android:layout_height="100dp"
+                    android:layout_centerInParent="true" />
+
+
+                <TextView
+                    android:id="@+id/user_name"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/h_head"
+                    android:layout_centerInParent="true"
+                    android:text="Jack"
+                    android:textSize="80px" />
+            </RelativeLayout>
+
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_below="@+id/percen_line"
+                android:orientation="vertical">
+
+                <Button
+                    android:id="@+id/person_bt1"
+                    android:layout_width="match_parent"
+                    android:layout_height="56dp"
+                    android:layout_marginTop="24dp"
+                    android:background="@drawable/underline"
+                    android:stateListAnimator="@null"
+                    android:gravity="left|center_vertical"
+                    android:text="    个人信息"
+                    android:textSize="60px" />
+
+                <Button
+                    android:id="@+id/person_bt2"
+                    android:layout_width="match_parent"
+                    android:layout_height="56dp"
+                    android:layout_below="@+id/person_bt1"
+                    android:layout_marginTop="1dp"
+                    android:background="@drawable/underline"
+                    android:stateListAnimator="@null"
+                    android:gravity="left|center_vertical"
+                    android:text="    我的社团"
+                    android:textSize="60px" />
+
+                <Button
+                    android:id="@+id/person_bt3"
+                    android:layout_width="match_parent"
+                    android:layout_height="56dp"
+                    android:layout_below="@+id/person_bt2"
+                    android:layout_marginTop="1dp"
+                    android:background="@drawable/underline"
+                    android:stateListAnimator="@null"
+                    android:gravity="left|center_vertical"
+                    android:text="    关于系统"
+                    android:textSize="60px" />
+
+                <Button
+                    android:id="@+id/person_bt4"
+                    android:layout_width="match_parent"
+                    android:layout_height="56dp"
+                    android:layout_below="@+id/person_bt3"
+                    android:layout_marginTop="24dp"
+                    android:background="@drawable/underline"
+                    android:stateListAnimator="@null"
+                    android:gravity="left|center_vertical"
+                    android:text="    创建社团"
+                    android:textSize="60px" />
+
+                <Button
+                    android:id="@+id/person_bt5"
+                    android:layout_width="match_parent"
+                    android:layout_height="56dp"
+                    android:layout_below="@+id/person_bt4"
+                    android:layout_marginTop="1dp"
+                    android:background="@drawable/underline"
+                    android:stateListAnimator="@null"
+                    android:gravity="left|center_vertical"
+                    android:text="    修改密码"
+                    android:textSize="60px" />
+
+                <Button
+                    android:id="@+id/person_bt6"
+                    android:layout_width="match_parent"
+                    android:layout_height="56dp"
+                    android:layout_below="@+id/person_bt5"
+                    android:layout_marginTop="1dp"
+                    android:background="@drawable/underline"
+                    android:stateListAnimator="@null"
+                    android:gravity="left|center_vertical"
+                    android:text="    退出登录"
+                    android:textSize="60px" />
+
+                <Button
+                    android:id="@+id/per_btnr1"
+                    android:layout_width="40dp"
+                    android:layout_height="40dp"
+                    android:layout_alignTop="@+id/person_bt1"
+                    android:layout_alignParentEnd="true"
+                    android:layout_marginTop="8dp"
+                    android:background="@drawable/right_per" />
+
+                <Button
+                    android:id="@+id/per_btnr2"
+                    android:layout_width="40dp"
+                    android:layout_height="40dp"
+                    android:layout_below="@+id/person_bt1"
+                    android:layout_alignParentEnd="true"
+                    android:layout_marginTop="8dp"
+                    android:background="@drawable/right_per" />
+
+                <Button
+                    android:id="@+id/per_btnr3"
+                    android:layout_width="40dp"
+                    android:layout_height="40dp"
+                    android:layout_below="@+id/person_bt2"
+                    android:layout_alignParentEnd="true"
+                    android:layout_marginTop="8dp"
+                    android:background="@drawable/right_per" />
+
+                <Button
+                    android:id="@+id/per_btnr4"
+                    android:layout_width="40dp"
+                    android:layout_height="40dp"
+                    android:layout_below="@id/per_btnr3"
+                    android:layout_alignTop="@+id/person_bt4"
+                    android:layout_alignParentEnd="true"
+                    android:layout_marginTop="8dp"
+                    android:background="@drawable/right_per" />
+
+                <Button
+                    android:id="@+id/per_btnr5"
+                    android:layout_width="40dp"
+                    android:layout_height="40dp"
+                    android:layout_below="@+id/person_bt4"
+                    android:layout_alignParentEnd="true"
+                    android:layout_marginTop="8dp"
+                    android:background="@drawable/right_per" />
+
+                <Button
+                    android:id="@+id/per_btnr6"
+                    android:layout_width="40dp"
+                    android:layout_height="40dp"
+                    android:layout_below="@+id/person_bt5"
+                    android:layout_alignParentEnd="true"
+                    android:layout_marginTop="8dp"
+                    android:background="@drawable/right_per" />
+                <ImageView
+                    android:layout_width="match_parent"
+                    android:layout_height="150dp"
+                    android:layout_below="@id/person_bt6"
+                    android:background="@android:color/background_light" />
+            </RelativeLayout>
+        </RelativeLayout>
+    </ScrollView>
+</LinearLayout>

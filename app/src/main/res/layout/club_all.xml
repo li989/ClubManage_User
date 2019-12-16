@@ -1,0 +1,212 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#F5F5F5">
+
+<!--    <LinearLayout-->
+<!--        android:id="@+id/school_notice_liner"-->
+<!--        android:layout_width="match_parent"-->
+<!--        android:layout_height="150px"-->
+<!--        android:background="@drawable/shape"-->
+<!--        android:orientation="horizontal"-->
+<!--        app:layout_constraintEnd_toEndOf="parent"-->
+<!--        app:layout_constraintStart_toStartOf="parent"-->
+<!--        app:layout_constraintTop_toTopOf="parent">-->
+
+
+<!--    </LinearLayout>-->
+<!--    <Button-->
+<!--        android:id="@+id/TextView_school_notice_release2"-->
+<!--        android:layout_width="40dp"-->
+<!--        android:layout_height="40dp"-->
+<!--        android:layout_marginTop="8dp"-->
+<!--        android:background="@drawable/noticesearch"-->
+<!--        android:gravity="center"-->
+<!--        android:visibility="visible"-->
+<!--        app:layout_constraintEnd_toEndOf="@+id/school_notice_liner"-->
+<!--        app:layout_constraintStart_toEndOf="@+id/school_notice_search"-->
+<!--        app:layout_constraintTop_toTopOf="parent" />-->
+<!--    <TextView-->
+<!--        android:id="@+id/TextView_school_notice"-->
+<!--        android:layout_width="wrap_content"-->
+<!--        android:layout_height="wrap_content"-->
+<!--        android:layout_marginStart="8dp"-->
+<!--        android:layout_marginTop="8dp"-->
+<!--        android:text="社团"-->
+<!--        android:textAppearance="@style/TextAppearance.AppCompat.Body1"-->
+<!--        android:textSize="70px"-->
+<!--        android:textStyle="bold"-->
+<!--        app:layout_constraintStart_toStartOf="parent"-->
+<!--        app:layout_constraintTop_toTopOf="parent" />-->
+
+<!--    <Button-->
+<!--        android:id="@+id/school_notice_search"-->
+<!--        android:layout_width="250dp"-->
+<!--        android:layout_height="40dp"-->
+<!--        android:layout_marginStart="24dp"-->
+<!--        android:layout_marginTop="8dp"-->
+<!--        android:layout_weight="1"-->
+<!--        android:background="@drawable/shape"-->
+<!--        android:text="搜索"-->
+<!--        android:textAlignment="center"-->
+<!--        android:textColor="@android:color/darker_gray"-->
+<!--        android:textSize="16sp"-->
+<!--        android:visibility="visible"-->
+<!--        app:layout_constraintStart_toEndOf="@+id/TextView_school_notice"-->
+<!--        app:layout_constraintTop_toTopOf="parent" />-->
+
+
+<!--    <com.example.activitytest.FadingScrollView-->
+<!--        android:id="@+id/nac_root"-->
+<!--        android:layout_width="match_parent"-->
+<!--        android:layout_height="0dp"-->
+<!--        android:overScrollMode="never"-->
+<!--        android:scrollbars="none"-->
+<!--        app:layout_constraintBottom_toBottomOf="parent"-->
+<!--        app:layout_constraintEnd_toEndOf="parent"-->
+<!--        app:layout_constraintStart_toStartOf="parent"-->
+<!--        app:layout_constraintTop_toBottomOf="@+id/school_notice_liner">-->
+
+<!--        <RelativeLayout-->
+<!--            android:id="@+id/rll1"-->
+<!--            android:layout_width="match_parent"-->
+<!--            android:layout_height="match_parent"-->
+<!--            android:background="#F5F5F5">-->
+
+<!--            <com.youth.banner.Banner-->
+<!--                android:id="@+id/mBanner3"-->
+<!--                android:layout_width="match_parent"-->
+<!--                android:layout_height="225dp"-->
+<!--                android:layout_alignParentStart="true"-->
+<!--                android:layout_alignParentTop="true" >-->
+
+<!--            </com.youth.banner.Banner>-->
+
+<!--            <ImageView-->
+<!--                android:id="@+id/club_all_img1"-->
+<!--                android:layout_width="match_parent"-->
+<!--                android:layout_height="80dp"-->
+<!--                android:layout_below="@id/mBanner3"-->
+<!--                android:layout_marginTop="0dp"-->
+<!--                app:srcCompat="@android:color/background_light" />-->
+
+<!--            <TextView-->
+<!--                android:id="@+id/text_all"-->
+<!--                android:layout_width="48dp"-->
+<!--                android:layout_height="wrap_content"-->
+<!--                android:gravity="center"-->
+<!--                android:layout_below="@id/club_all_btn_all"-->
+<!--                android:layout_alignEnd="@id/club_all_btn_all"-->
+<!--                android:text="全部" />-->
+
+<!--            <TextView-->
+<!--                android:id="@+id/textView_button2"-->
+<!--                android:layout_width="40dp"-->
+<!--                android:layout_height="wrap_content"-->
+<!--                android:gravity="center"-->
+<!--                android:layout_below="@id/club_all_btn_cla"-->
+<!--                android:layout_alignEnd="@id/club_all_btn_cla"-->
+<!--                android:text="分类"/>-->
+
+<!--            <TextView-->
+<!--                android:id="@+id/textView_button3"-->
+<!--                android:layout_width="48dp"-->
+<!--                android:layout_height="wrap_content"-->
+<!--                android:gravity="center"-->
+<!--                android:layout_below="@id/club_all_btn_rank"-->
+<!--                android:layout_alignEnd="@id/club_all_btn_rank"-->
+<!--                android:text="排行" />-->
+
+
+<!--            <ImageView-->
+<!--                android:id="@+id/club_all_img2"-->
+<!--                android:layout_below="@+id/club_all_img1"-->
+<!--                android:layout_width="match_parent"-->
+<!--                android:layout_height="50dp"-->
+<!--                android:layout_marginTop="1dp"-->
+<!--                app:srcCompat="@android:color/background_light" />-->
+
+<!--            <TextView-->
+<!--                android:id="@+id/club_all_test1"-->
+<!--                android:layout_below="@+id/club_all_img1"-->
+<!--                android:layout_marginStart="16dp"-->
+<!--                android:layout_marginTop="10dp"-->
+<!--                android:layout_width="wrap_content"-->
+<!--                android:layout_height="wrap_content"-->
+<!--                android:ellipsize="end"-->
+<!--                android:maxEms="6"-->
+<!--                android:maxLines="1"-->
+<!--                android:text="热门社团"-->
+<!--                android:textColor="#000000"-->
+<!--                android:textSize="60px" />-->
+
+
+<!--            <Button-->
+<!--                android:id="@+id/btn_right"-->
+<!--                android:layout_below="@+id/club_all_img1"-->
+<!--                android:layout_width="32dp"-->
+<!--                android:layout_height="32dp"-->
+<!--                android:layout_marginEnd="16dp"-->
+<!--                android:layout_marginTop="9dp"-->
+<!--                android:layout_alignEnd="@id/club_all_img1"-->
+<!--                android:background="@drawable/club_right"/>-->
+
+<!--            <Button-->
+<!--                android:id="@+id/botton_more"-->
+<!--                android:layout_width="40dp"-->
+<!--                android:layout_height="wrap_content"-->
+<!--                android:layout_below="@+id/club_all_img1"-->
+<!--                android:layout_alignEnd="@id/club_all_img1"-->
+<!--                android:layout_marginTop="1dp"-->
+<!--                android:layout_marginEnd="40dp"-->
+<!--                android:background="@android:color/transparent"-->
+<!--                android:text="更多"-->
+<!--                android:textSize="18sp" />-->
+<!--            <Button-->
+<!--                android:id="@+id/club_all_btn_all"-->
+<!--                android:layout_below="@id/mBanner3"-->
+<!--                android:layout_marginTop="18dp"-->
+<!--                android:layout_marginLeft="70dp"-->
+<!--                android:layout_width="48dp"-->
+<!--                android:layout_height="40dp"-->
+<!--                android:background="@android:color/transparent"-->
+<!--                android:text="ALL"-->
+<!--                android:textColor="@android:color/tertiary_text_light"-->
+<!--                android:textSize="26sp" />-->
+
+<!--            <Button-->
+<!--                android:id="@+id/club_all_btn_rank"-->
+<!--                android:layout_width="48dp"-->
+<!--                android:layout_height="48dp"-->
+<!--                android:layout_below="@id/mBanner3"-->
+<!--                android:layout_alignEnd="@id/mBanner3"-->
+<!--                android:layout_marginTop="8dp"-->
+<!--                android:layout_marginRight="70dp"-->
+<!--                android:background="@drawable/club_rank" />-->
+
+<!--            <Button-->
+<!--                android:id="@+id/club_all_btn_cla"-->
+<!--                android:layout_below="@id/mBanner3"-->
+
+<!--                android:layout_marginTop="16dp"-->
+<!--                android:layout_centerHorizontal="true"-->
+<!--                android:layout_width="40dp"-->
+<!--                android:layout_height="40dp"-->
+<!--                android:background="@drawable/cla" />-->
+
+<!--            <androidx.recyclerview.widget.RecyclerView-->
+<!--                android:id="@+id/club_all_rela"-->
+<!--                android:layout_width="match_parent"-->
+<!--                android:layout_height="wrap_content"-->
+<!--                android:layout_below="@id/club_all_img2"-->
+<!--                android:layout_marginTop="1dp"-->
+<!--                android:background="@android:color/background_light"-->
+<!--                tools:listitem="@layout/club_all_list" />-->
+
+
+<!--        </RelativeLayout>-->
+<!--    </com.example.activitytest.FadingScrollView>-->
+</androidx.constraintlayout.widget.ConstraintLayout>

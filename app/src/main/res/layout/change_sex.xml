@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    >
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="150px"
+            android:background="#ffffff"
+            android:orientation="horizontal"
+            android:id="@+id/apply_change_sex_liner">
+
+            <Button
+                android:id="@+id/button_change_sex_exit"
+                style="@style/Widget.AppCompat.Button.Borderless"
+                android:layout_width="150px"
+                android:layout_height="150px"
+                android:background="@drawable/arrow_left" />
+
+            <TextView
+                android:id="@+id/sex"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="180px"
+                android:layout_marginTop="20px"
+                android:text="更改性别"
+                android:textAppearance="@style/TextAppearance.AppCompat.Body1"
+                android:textSize="80px"
+                android:textStyle="bold" />
+
+            <Button
+                android:id="@+id/TextView_change_sex_button"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="180px"
+                android:layout_marginTop="10px"
+                android:backgroundTint="#FFFFFF"
+                android:gravity="center"
+                android:text="保存"
+                android:textSize="60px" />
+        </LinearLayout>
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginTop="20px"
+            android:layout_below="@+id/apply_change_sex_liner"
+            android:background="#FFFFFF">
+
+
+            <TextView
+                android:id="@+id/remind"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="70dp"
+                android:layout_marginTop="15dp"
+                android:text="性别:"
+                android:textSize="80px"
+                android:textStyle="bold" />
+
+
+
+            <RadioGroup
+                android:id="@+id/radioGroup"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <RadioButton
+                    android:id="@+id/btnMan"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="155dp"
+                    android:layout_marginTop="20dp"
+                    android:checked="true"
+                    android:text="男"
+                    android:textSize="24sp" />
+
+                <RadioButton
+                    android:id="@+id/btnWoman"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="20dp"
+                    android:textSize="24sp"
+                    android:text="女"/>
+            </RadioGroup>
+
+
+        </RelativeLayout>
+    </RelativeLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>
+
+

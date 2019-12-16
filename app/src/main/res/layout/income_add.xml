@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="150px"
+            android:background="#ffffff"
+            android:orientation="horizontal"
+            android:id="@+id/apply_income_add_liner">
+
+            <Button
+                android:id="@+id/button_income_add_exit"
+                style="@style/Widget.AppCompat.Button.Borderless"
+                android:layout_width="150px"
+                android:layout_height="150px"
+                android:background="@drawable/arrow_left" />
+
+            <TextView
+                android:id="@+id/TextView_income_add_release"
+                android:layout_toRightOf="@+id/button_income_add_exit"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="180px"
+                android:layout_marginTop="20px"
+                android:text="提交收支"
+                android:textAppearance="@style/TextAppearance.AppCompat.Body1"
+                android:textSize="80px"
+                android:textStyle="bold" />
+
+            <Button
+                android:id="@+id/TextView_income_add_release2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_marginRight="10px"
+                android:layout_marginTop="10px"
+                android:backgroundTint="#FFFFFF"
+                android:gravity="center"
+                android:text="提交"
+                android:textSize="60px" />
+        </RelativeLayout>
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginTop="20px"
+            android:layout_below="@+id/apply_income_add_liner"
+            android:background="#FFFFFF">
+
+            <EditText
+                android:id="@+id/EditText_club_notice_theme"
+                android:layout_width="match_parent"
+                android:hint="请输入收支数额"
+                android:inputType="numberSigned|numberDecimal"
+                android:layout_height="150px"
+                android:background="@drawable/underline"/>
+            <EditText
+                android:id="@+id/EditText_club_notice_page"
+                android:layout_below="@+id/EditText_club_notice_theme"
+                android:layout_above="@+id/TextView_club_notice_release3"
+                android:gravity="top"
+                android:hint="收支详情"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@drawable/underline"
+                />
+        </RelativeLayout>
+    </RelativeLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>

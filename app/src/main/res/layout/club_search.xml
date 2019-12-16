@@ -1,0 +1,185 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#F5F5F5">
+
+    <LinearLayout
+        android:id="@+id/club_search_liner"
+        android:layout_width="match_parent"
+        android:layout_height="150px"
+        android:background="#FFFFFF"
+        android:orientation="horizontal"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/club_search_back"
+        android:layout_width="48dp"
+        android:layout_height="48dp"
+        android:layout_marginStart="4dp"
+        android:layout_marginTop="4dp"
+        android:layout_weight="1"
+        android:background="@drawable/arrow_left"
+        android:visibility="visible"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <EditText
+        android:id="@+id/club_editText5"
+        android:maxLines="1"
+        android:singleLine="true"
+        android:layout_width="250dp"
+        android:layout_height="40dp"
+        android:layout_marginStart="32dp"
+        android:layout_marginTop="8dp"
+        android:layout_toRightOf="@+id/TextView_school_notice_title"
+        android:background="@android:color/background_light"
+        android:hint="   推荐社团"
+        android:maxLength="16"
+        android:textSize="60px"
+        app:layout_constraintStart_toEndOf="@+id/club_search_back"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ImageButton
+        android:id="@+id/club_TextView_school_notice_release3"
+        android:layout_width="45dp"
+        android:layout_height="45dp"
+        android:layout_marginStart="16dp"
+        android:background="#00000000"
+        android:gravity="center"
+        android:scaleType="fitCenter"
+        android:src="@drawable/search_b"
+        android:textSize="60px"
+        app:layout_constraintBottom_toBottomOf="@+id/club_editText5"
+        app:layout_constraintStart_toEndOf="@+id/club_editText5"
+        app:layout_constraintTop_toTopOf="@+id/club_editText5" />
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/club_search_rela"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:background="@android:color/background_light"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/club_search_liner"
+        tools:listitem="@layout/club_search_list" />
+
+    <RelativeLayout
+        android:id="@+id/club_search_title"
+        android:layout_width="match_parent"
+        android:layout_height="150px"
+        android:layout_below="@+id/search_liner"
+        android:background="@drawable/underline"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/club_search_liner">
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/club_search_label"
+        android:layout_width="match_parent"
+        android:layout_height="200dp"
+        android:layout_below="@+id/search_title"
+        android:layout_marginTop="1dp"
+        android:background="@drawable/underline"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/club_search_title">
+
+
+    </RelativeLayout>
+
+    <TextView
+        android:id="@+id/club_TextView_search_hot_name1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="40dp"
+        android:layout_marginTop="32dp"
+        android:gravity="center_vertical"
+        android:textColor="#000000"
+        android:textSize="20sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/club_search_title" />
+
+    <TextView
+        android:id="@+id/club_TextView_search_hot_name2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:gravity="center_vertical"
+        android:textColor="#000000"
+        android:textSize="20sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/club_TextView_search_hot_name1"
+        app:layout_constraintTop_toTopOf="@+id/club_TextView_search_hot_name1" />
+
+    <TextView
+        android:id="@+id/club_TextView_search_hot_name3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="40dp"
+        android:layout_marginTop="16dp"
+        android:gravity="center_vertical"
+        android:textColor="#000000"
+        android:textSize="20sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/club_TextView_search_hot_name1" />
+
+    <TextView
+        android:id="@+id/club_TextView_search_hot_name4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:gravity="center_vertical"
+        android:textColor="#000000"
+        android:textSize="20sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/club_TextView_search_hot_name1"
+        app:layout_constraintTop_toTopOf="@+id/club_TextView_search_hot_name3" />
+
+    <TextView
+        android:id="@+id/club_TextView_search_hot_name5"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="40dp"
+        android:layout_marginTop="16dp"
+        android:gravity="center_vertical"
+        android:textColor="#000000"
+        android:textSize="20sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/club_TextView_search_hot_name3" />
+
+    <TextView
+        android:id="@+id/club_TextView_search_hot_name6"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:gravity="center_vertical"
+        android:textColor="#000000"
+        android:textSize="20sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/club_TextView_search_hot_name1"
+        app:layout_constraintTop_toBottomOf="@+id/club_TextView_search_hot_name4" />
+
+    <TextView
+        android:id="@+id/club_TextView_search_hot"
+        android:layout_width="wrap_content"
+        android:layout_height="31dp"
+        android:layout_marginStart="16dp"
+        android:gravity="center_vertical"
+        android:text="热门搜索"
+        android:textColor="#000000"
+        android:textSize="60px"
+        app:layout_constraintBottom_toBottomOf="@+id/club_search_title"
+        app:layout_constraintStart_toStartOf="@+id/club_search_title"
+        app:layout_constraintTop_toTopOf="@+id/club_search_title" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

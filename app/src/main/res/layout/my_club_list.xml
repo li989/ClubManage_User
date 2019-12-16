@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <ImageView
+            android:id="@+id/mcl_imageView1"
+            android:layout_marginLeft="50px"
+            android:layout_marginTop="60px"
+            android:layout_marginBottom="20px"
+            android:layout_height="170px"
+            android:layout_width="170px"
+            app:srcCompat="@drawable/head" />
+        <TextView
+            android:id="@+id/mcl_name"
+            android:layout_toRightOf="@+id/mcl_imageView1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="40px"
+            android:layout_marginTop="40px"
+            android:text="篮球社"
+            android:maxEms="6"
+            android:maxLines="1"
+            android:ellipsize = "end"
+            android:textSize="80px"
+            android:textColor="#000000"/>
+        <TextView
+            android:id="@+id/mcl_grade"
+            android:layout_toRightOf="@+id/mcl_imageView1"
+            android:layout_below="@+id/mcl_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="40px"
+            android:layout_marginTop="20px"
+            android:text="社员"
+            android:maxEms="6"
+            android:maxLines="1"
+            android:ellipsize = "end"
+            android:textSize="60px"
+            android:textColor="#000000"/>
+        <TextView
+            android:id="@+id/mcl_time"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_below="@+id/mcl_name"
+            android:layout_marginRight="40px"
+            android:layout_marginTop="20px"
+            android:layout_marginBottom="20px"
+            android:text="2019-2-9"
+            android:textColor="#A09898"
+            android:textSize="55px" />
+    </RelativeLayout>
+    </LinearLayout>
+
+
+
+

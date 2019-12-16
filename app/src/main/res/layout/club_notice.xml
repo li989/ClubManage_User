@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".club_notice">
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="150px"
+            android:background="#FFFFFF"
+            android:orientation="horizontal"
+            android:id="@+id/acclno_liner">
+
+            <Button
+                android:id="@+id/acclno_exit"
+                style="@style/Widget.AppCompat.Button.Borderless"
+                android:layout_width="150px"
+                android:layout_height="150px"
+                android:background="@drawable/arrow_left" />
+
+            <TextView
+                android:id="@+id/acclno_release"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="200px"
+                android:layout_marginTop="20px"
+                android:layout_toRightOf="@id/acclno_exit"
+                android:text="社团公告"
+                android:textAppearance="@style/TextAppearance.AppCompat.Body1"
+                android:textSize="80px"
+                android:textStyle="bold" />
+
+            <Button
+                android:id="@+id/acclno_release2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_marginTop="10px"
+                android:layout_marginRight="20px"
+                android:backgroundTint="#FFFFFF"
+                android:gravity="center"
+                android:text="发布"
+                android:textSize="60px" />
+        </RelativeLayout>
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:layout_below="@+id/acclno_liner"
+            android:id="@+id/acclno_recy"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" />
+
+    </RelativeLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>

@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.example.activitytest">
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.CAMERA" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/icon"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/icon"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+        <activity
+            android:name=".welcome"
+            android:label="@string/app_name">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity android:name=".get_award"/>
+        <activity android:name=".get_income"/>
+        <activity android:name=".income_add" />
+        <activity android:name=".apply_award" />
+        <activity android:name=".club_num" />
+        <activity android:name=".apply_activity" />
+        <activity android:name=".add_clubnotice" />
+        <activity android:name=".club_introducein" />
+        <activity android:name=".club_introduceout" />
+        <activity android:name=".club_person" />
+        <activity android:name=".activity_submit" />
+        <activity android:name=".club_joinlist" />
+        <activity android:name=".club_notice" />
+        <activity android:name=".noticesearch" />
+        <activity android:name=".club_main" />
+        <activity android:name=".notice_digital" />
+        <activity android:name=".PersonalInform" />
+        <activity android:name=".ChangePwd" />
+        <activity android:name=".AboutSystem" />
+        <activity android:name=".MyClub" />
+        <activity android:name=".club_search" />
+        <activity android:name=".birthday" />
+        <activity android:name=".ChangeSex" />
+        <activity android:name=".ChangeSno" />
+        <activity android:name=".ChangeMajor" />
+        <activity android:name=".ChangeName" />
+        <activity android:name=".Changemobile" />
+        <activity android:name=".add_club" />
+        <activity android:name=".club_classify" />
+        <activity android:name=".register" />
+        <activity android:name=".login" />
+        <activity android:name=".MainActivity" />
+        <activity android:name=".club_more" />
+        <activity android:name=".club_rank" />
+        <activity android:name=".club_act" />
+        <activity android:name=".club_allclub" />
+        <activity android:name=".club_main1"/>
+        <activity android:name=".club_person_info" />
+        <activity android:name=".club_actinf" />
+        <activity android:name=".club_notice_digital" />
+        <activity android:name=".awards" />
+        <activity android:name=".club_perinf" />
+
+
+    </application>
+
+</manifest>

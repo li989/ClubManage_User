@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="150px"
+        android:background="#FFFFFF"
+        android:orientation="horizontal"
+        android:id="@+id/apply_award_liner">
+
+        <Button
+            android:id="@+id/button_apply_award_exit"
+            style="@style/Widget.AppCompat.Button.Borderless"
+            android:layout_width="150px"
+            android:layout_height="150px"
+            android:background="@drawable/arrow_left" />
+
+        <TextView
+            android:id="@+id/TextView_apply_award_release"
+            android:layout_toRightOf="@+id/button_apply_award_exit"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="180px"
+            android:layout_marginTop="20px"
+            android:text="申请奖项"
+            android:textAppearance="@style/TextAppearance.AppCompat.Body1"
+            android:textSize="80px"
+            android:textStyle="bold" />
+
+        <Button
+            android:id="@+id/TextView_apply_award_release2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="10px"
+            android:layout_marginTop="10px"
+            android:backgroundTint="#FFFFFF"
+            android:gravity="center"
+            android:text="提交"
+            android:textSize="60px" />
+    </RelativeLayout>
+    <RelativeLayout
+        android:id="@+id/apply_award_title"
+        android:layout_below="@+id/apply_award_liner"
+        android:layout_width="match_parent"
+        android:layout_height="150px"
+        android:layout_marginTop="20px"
+        android:background="@drawable/underline">
+        <TextView
+            android:id="@+id/TextView_apply_award_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="奖项名称"
+            android:layout_marginLeft="20px"
+            android:layout_marginTop="20px"
+            android:textSize="60px"
+            android:textColor="#000000"
+            />
+
+        <EditText
+            android:id="@+id/awards_name"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="20px"
+            android:layout_marginTop="20px"
+            android:layout_toRightOf="@+id/TextView_apply_award_title"
+            android:background="@null"
+            android:hint="请填写奖项名称"
+            android:textSize="60px" />
+    </RelativeLayout>
+    <RelativeLayout
+        android:layout_below="@+id/apply_award_title"
+        android:id="@+id/apply_award_picture"
+        android:layout_width="match_parent"
+        android:layout_height="200px"
+        android:layout_marginTop="20px"
+        android:background="@drawable/underline">
+        <TextView
+            android:id="@+id/TextView_apply_award_picture"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="奖项名称"
+            android:layout_marginLeft="20px"
+            android:layout_marginTop="40px"
+            android:textSize="60px"
+            android:textColor="#000000"
+            />
+
+        <ImageView
+            android:id="@+id/TextView_apply_award_picture1"
+            android:layout_width="200px"
+            android:layout_height="200px"
+            android:layout_marginLeft="20px"
+            android:layout_marginTop="20px"
+            android:layout_toRightOf="@+id/TextView_apply_award_picture"
+            android:background="@drawable/addpicture"
+            android:gravity="left" />
+    </RelativeLayout>
+
+
+</RelativeLayout>

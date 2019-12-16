@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".AboutSystem">
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <ImageView
+            android:id="@+id/h_back"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:alpha="0.3"
+            android:background="@drawable/systemback">
+        </ImageView>
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="150px"
+            android:background="#ffffff"
+            android:orientation="horizontal"
+            android:id="@+id/apply_activity_liner">
+
+            <Button
+                android:id="@+id/about_system_exit"
+                style="@style/Widget.AppCompat.Button.Borderless"
+                android:layout_width="150px"
+                android:layout_height="150px"
+                android:background="@drawable/arrow_left" />
+
+            <TextView
+                android:id="@+id/TextView_apply_activity_release"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_toRightOf="@+id/button_apply_activity_exit"
+                android:layout_marginLeft="180px"
+                android:layout_marginTop="20px"
+                android:text="关于系统"
+                android:textAppearance="@style/TextAppearance.AppCompat.Body1"
+                android:textSize="80px"
+                android:textStyle="bold" />
+        </RelativeLayout>
+        <TextView
+            android:id="@+id/editSms"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="80dp"
+            android:gravity="left|top"
+            android:inputType="textMultiLine"
+
+            android:minLines="6"
+            android:text="本系统刚经开发，系统版本还不太稳定。系统使用过程中若遇到问题，请广大使用者见谅。如果您有任何想提的意见，可以发送到邮箱：1235264123@qq.com 。如果您对我们的团队感兴趣，可以加入。期待您的宝贵建议及其意见。"
+            android:textColor="@android:color/background_dark"
+            android:textSize="30sp" />
+    </RelativeLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>

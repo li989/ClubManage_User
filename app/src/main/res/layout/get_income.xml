@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".get_income">
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="150px"
+            android:background="#ffffff"
+            android:orientation="horizontal"
+            android:id="@+id/apply_get_income_liner">
+
+            <Button
+                android:id="@+id/button_get_income_exit"
+                style="@style/Widget.AppCompat.Button.Borderless"
+                android:layout_width="150px"
+                android:layout_height="150px"
+                android:background="@drawable/arrow_left" />
+
+            <TextView
+                android:id="@+id/TextView_get_income_release"
+                android:layout_toRightOf="@+id/button_get_income_exit"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="180px"
+                android:layout_marginTop="20px"
+                android:text="社团收支"
+                android:textAppearance="@style/TextAppearance.AppCompat.Body1"
+                android:textSize="80px"
+                android:textStyle="bold" />
+            <Button
+                android:id="@+id/Button_get_income_release2"
+                android:layout_alignParentRight="true"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="20px"
+                android:layout_marginTop="10px"
+                android:backgroundTint="#FFFFFF"
+                android:gravity="center"
+                android:text="添加"
+                android:textSize="60px" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/get_income_mouth"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/apply_get_income_liner"
+            android:background="#D7D7D7">
+
+            <Button
+                android:id="@+id/get_income_button2"
+                android:layout_width="200px"
+                android:layout_height="100px"
+                android:layout_marginLeft="60px"
+                android:layout_marginTop="30px"
+                android:layout_marginBottom="20px"
+                android:background="@drawable/button_circle_shape"
+
+                android:text="本月" />
+
+            <TextView
+                android:id="@+id/get_income_output"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:text="支出: 123456"
+                android:layout_marginTop="20px"
+                android:layout_marginRight="100px"
+                android:textSize="40px"/>
+            <TextView
+                android:id="@+id/get_income_input"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_below="@+id/get_income_output"
+                android:layout_marginTop="10px"
+                android:layout_marginBottom="20px"
+                android:layout_marginRight="100px"
+                android:textSize="40px"
+                android:text="收入: 123456" />
+        </RelativeLayout>
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_below="@+id/get_income_mouth"
+            android:id="@+id/school_notice_rela"/>
+    </RelativeLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>

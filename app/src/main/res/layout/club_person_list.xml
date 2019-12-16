@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="@drawable/underline"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+    <ImageView
+        android:id="@+id/imageView_club_person_list"
+        android:layout_marginLeft="50px"
+        android:layout_marginTop="40px"
+        android:layout_marginBottom="20px"
+        android:layout_height="170px"
+        android:layout_width="170px"
+        app:srcCompat="@drawable/head" />
+    <TextView
+        android:id="@+id/TextView_club_person_list_name"
+        android:layout_toRightOf="@+id/imageView_club_person_list"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="40px"
+        android:layout_marginTop="40px"
+        android:text="123456"
+        android:maxEms="6"
+        android:maxLines="1"
+        android:ellipsize = "end"
+        android:textSize="60px"
+        android:textColor="#000000"/>
+
+    <TextView
+        android:id="@+id/TextView_club_person_list_grade"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/TextView_club_person_list_name"
+        android:layout_marginLeft="40px"
+        android:layout_marginTop="20px"
+        android:layout_marginBottom="40px"
+        android:layout_toRightOf="@+id/imageView_club_person_list"
+        android:text="社长"
+        android:textColor="#A09898"
+        android:textSize="55px" />
+</RelativeLayout>

@@ -1,0 +1,138 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".club_classify">
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/club_classify_rela"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/horizontalScrollView"
+        tools:listitem="@layout/club_classify_list" />
+
+
+    <RelativeLayout
+        android:id="@+id/club_classify_liner"
+        android:layout_width="match_parent"
+        android:layout_height="150px"
+        android:background="#ffffff"
+        android:orientation="horizontal"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <Button
+            android:id="@+id/club_classify_exit"
+            style="@style/Widget.AppCompat.Button.Borderless"
+            android:layout_width="150px"
+            android:layout_height="150px"
+            android:background="@drawable/arrow_left" />
+
+        <TextView
+            android:id="@+id/club_classify_release"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:layout_marginLeft="180px"
+            android:layout_marginTop="20px"
+            android:layout_toRightOf="@+id/club_classify_exit"
+            android:text="社团分类"
+            android:textAppearance="@style/TextAppearance.AppCompat.Body1"
+            android:textSize="80px"
+            android:textStyle="bold" />
+    </RelativeLayout>
+
+    <HorizontalScrollView
+        android:id="@+id/horizontalScrollView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/club_classify_liner"
+        android:background="#FFFFFF"
+        android:scrollbars="none"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/club_classify_liner">
+
+        <LinearLayout
+            android:id="@+id/rl_title_log_activity"
+            android:layout_width="wrap_content"
+            android:layout_height="50dp"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/tv_event_log_activity1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginLeft="40px"
+                android:gravity="center"
+                android:text="社会实践"
+                android:textColor="#8F8585"
+                android:textSize="60px" />
+
+            <TextView
+                android:id="@+id/tv_event_log_activity2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginLeft="40px"
+                android:gravity="center"
+                android:text="文学艺术"
+                android:textColor="#8F8585"
+                android:textSize="60px" />
+
+            <TextView
+                android:id="@+id/tv_event_log_activity3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginLeft="40px"
+                android:gravity="center"
+                android:text="学术科技"
+                android:textColor="#8F8585"
+                android:textSize="60px" />
+
+            <TextView
+                android:id="@+id/tv_event_log_activity4"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginLeft="40px"
+                android:gravity="center"
+                android:text="爱心公益"
+                android:textColor="#8F8585"
+                android:textSize="60px" />
+
+            <TextView
+                android:id="@+id/tv_event_log_activity5"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginLeft="40px"
+                android:gravity="center"
+                android:text="体育健身"
+                android:textColor="#8F8585"
+                android:textSize="60px" />
+
+            <TextView
+                android:id="@+id/tv_event_log_activity6"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginLeft="40px"
+                android:layout_marginRight="40px"
+                android:gravity="center"
+                android:text="综合"
+                android:textColor="#8F8585"
+                android:textSize="60px" />
+        </LinearLayout>
+    </HorizontalScrollView>
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
